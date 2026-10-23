@@ -1,4 +1,5 @@
-import { difference, intersection } from 'polygon-clipping';
+import polygonClipping from 'polygon-clipping';
+const { difference, intersection } = polygonClipping;
 import type { MultiPolygon, Placement, Point, Ring } from './types';
 
 /** Squared millimetres: only numerical slivers below this are disregarded. */

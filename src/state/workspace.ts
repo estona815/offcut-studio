@@ -1,4 +1,5 @@
-import { intersection } from 'polygon-clipping';
+import polygonClipping from 'polygon-clipping';
+const { intersection } = polygonClipping;
 import { rectangle, subtractCut } from '../domain/geometry';
 import { getRecipes, seedScraps } from '../domain/recipes';
 import { planRecipe, recoverPlan, validatePlan } from '../domain/planner';

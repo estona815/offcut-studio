@@ -1,4 +1,5 @@
-import { intersection, xor } from 'polygon-clipping';
+import polygonClipping from 'polygon-clipping';
+const { intersection, xor } = polygonClipping;
 import { area, rectangle, validateGeometry } from '../domain/geometry';
 import { getRecipes } from '../domain/recipes';
 import type { CutRecord, MultiPolygon, PieceSpec, Placement, Plan, Ring, Scrap, Workspace } from '../domain/types';
